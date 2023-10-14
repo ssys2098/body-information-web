@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신체 정보</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>3D 신체 정보 입력</h1>
+    <form action="result.html">
+        <p>이름:</p>
+        <input type="text" name="name" id="name">
+       
+        <label for="age">나이:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <p>성별:</p>
+        <label><input type="radio" name="gender" value="male"> 남성</label>
+        <label><input type="radio" name="gender" value="female"> 여성</label>  
+    
+        <fieldset>
+            <legend>키 (cm) 입력:</legend>
+            <input type="number" id="height" name="height" min="0">
+        </fieldset>
+    </body>
+        <label for="weight">몸무게 (kg):</label>
+        <input type="number" id="weight" name="weight" required><br><br>
+        <fieldset>
+            <legend>혈액형 선택:</legend>
+            <select id="bloodType" name="bloodType">
+                <option value="A">A형</option>
+                <option value="B">B형</option>
+                <option value="AB">AB형</option>
+                <option value="O">O형</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>병 명:</legend>
+            <input type="text" id="disease" name="disease">
+        </fieldset>
+        <fieldset>
+            <legend>특이사항:</legend>
+            <input type="text" id="note" name="note">
+        </fieldset>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
